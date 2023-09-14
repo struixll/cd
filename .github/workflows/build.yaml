@@ -51,7 +51,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'docker.io/struixll/cd:trivy'
+          image-ref: 'docker.io/ileona/cd:trivy' #mettre le nom d'uitilateur de dockerhub
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
