@@ -35,5 +35,5 @@ jobs:
       steps:
       - uses: sburris/dependency-check-action@master
         with:
-        Project-Name: TestApp
+        Project-Name: cd
             
