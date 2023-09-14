@@ -35,5 +35,5 @@ jobs:
       steps:
       - uses: sburris/dependency-check-action@master
         with:
-        Project-Name: cd
+        Project-Name: struixll/cd
             
