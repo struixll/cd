@@ -33,6 +33,13 @@ jobs:
     OWASP:
       runs-on: ubuntu-latest
       steps:
+      - name: Install Node.js and npm
+        uses: actions/setup-node@v2
+        with: 
+          node-version: '14'
+      - name: Install NPM dependencies
+        run: |
+          npm install
       - uses: sburris/dependency-check-action@master
         with:
           Project-Name: TestApp
@@ -43,13 +50,5 @@ jobs:
           path: reports
       - uses: actions/checkout@v2
 
-      - name: Install Node.js and npm
-        uses: actions/setup-node@v2
-        with: 
-          node-version: '14'
-
-
-      - name: Install NPM dependencies
-        run: |
-          npm install --production --unsafe-perm
+      
             
